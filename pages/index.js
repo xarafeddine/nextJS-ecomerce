@@ -4,17 +4,17 @@ import styles from "../styles/Home.module.css";
 import products from "../products.json";
 
 export default function Home() {
-  console.log("products", products);
+  console.log("env.key", process.env.NEXT_PUBLIC_STRIPE_API_KEY);
 
   return (
     <div className={styles.container}>
       <Head>
-        <title>Ordinary Shop</title>
+        <title>Regular Shop</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcom to Ordinary Shop</h1>
+        <h1 className={styles.title}>Welcom to Regular Shop</h1>
 
         <p className={styles.description}>
           the most expensive Ordinary shop on the web!
