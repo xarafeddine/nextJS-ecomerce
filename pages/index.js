@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import products from "../products.json";
+import { initiateCheckout } from "../lib/payments";
 
 export default function Home() {
   console.log("env.key", process.env.NEXT_PUBLIC_STRIPE_API_KEY);
@@ -31,6 +32,23 @@ export default function Home() {
                   <p>$ {price}</p>
                   <p>{description}</p>
                 </a>
+                <p>
+                  <button
+                    className={styles.button}
+                    onClick={() => {
+                      initiateCheckout({
+                        lineItems: [
+                          {
+                            price: id,
+                            quantity: 1,
+                          },
+                        ],
+                      });
+                    }}
+                  >
+                    Buy now
+                  </button>
+                </p>
               </li>
             );
           })}
