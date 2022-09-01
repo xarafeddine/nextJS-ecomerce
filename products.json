@@ -1,0 +1,23 @@
+[
+  {
+    "id": "price_1LdFvvGkbZWE2STBenwh4PDy",
+    "title": "T-shirt",
+    "description": "Buy an ordinary T-shirt.",
+    "image": "/images/T-shirt.png",
+    "price": 20.0
+  },
+  {
+    "id": "price_1LdFzDGkbZWE2STBEbAPwQLK",
+    "title": "Shows",
+    "description": "Buy some ordinary Shoes.",
+    "image": "/images/Shoes.jpg",
+    "price": 200.0
+  },
+  {
+    "id": "price_1LdFzoGkbZWE2STBANq6j2JK",
+    "title": "Pants",
+    "description": "Buy some ordinary Pants.",
+    "image": "/images/Pants.png",
+    "price": 100.0
+  }
+]
